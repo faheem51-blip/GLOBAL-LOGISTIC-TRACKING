@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftShip | Premium Courier Service</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Swift<span class="heading-orange">Ship</span></a>
+
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="track.html">Track</a></li>
+                    <li><a href="quote.html">Quote</a></li>
+                    <li><a href="login.html" class="cta-button">Login</a></li> 
+                    <li><a href="about.html">about</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-slider">
+                <div class="slide" style="background-image: url('https://tse2.mm.bing.net/th/id/OIP.E4RS2QyS4HwqJrDEapJYcwHaFJ?pid=Api&P=0&h=220');"></div>
+                <div class="slide" style="background-image: url('https://tse1.mm.bing.net/th/id/OIP.scUchuDIWyxxKgDEdfTrgAHaDt?pid=Api&P=0&h=220');"></div>
+               <div class="slide" style="background-image: url('https://tse3.mm.bing.net/th/id/OIP.kKqwZh5anaYGaWoYEMFM8wHaE7?pid=Api&P=0&h=220');"></div>
+            </div>
+            </div>
+            <div class="hero-content">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.E4RS2QyS4HwqJrDEapJYcwHaFJ?pid=Api&P=0&h=220" alt="Courier vehicle moving" srcset="">
+                <h1>Global Logistics, Delivered <span class="heading-orange">Swiftly</span>.</h1>
+                <p>Air, Water, or Road—We Handle Your World's Shipments with Premium Care.</p>
+                <a href="quote.html" class="cta-button">Get a Free Quote Now</a>
+            </div>
+        </section>
+
+        <section id="track-section" class="text-center">
+            <h2>Track Your Shipment</h2>
+            <div class="form-container" style="max-width: 600px;">
+                <form id="tracking-form">
+                    <div class="form-group">
+                        <input type="text" id="tracking-number" placeholder="Enter Tracking Number (e.g., SS12345678)" required>
+                    </div>
+                    <button type="submit" class="cta-button">Track Package</button>
+                    <p id="tracking-status" style="margin-top: 20px; font-weight: 600;"></p>
+                </form>
+            </div>
+        </section>
+
+        <section id="services-overview" class="text-center">
+            <h2 class="heading-orange">Our Global Transport Methods</h2>
+            <p>Choose the speed and efficiency that fits your needs.</p>
+            <div class="services-container">
+                
+                <div class="service-card animate-on-scroll">
+                    <i class="fa-solid fa-plane-up service-icon"></i>
+                    <h3>Air Freight</h3>
+                    <p>Fastest option for time-sensitive, high-value packages globally. Guaranteed speed.</p>
+                    <a href="services.html#air">Learn More</a>
+                </div>
+
+                <div class="service-card animate-on-scroll">
+                    <i class="fa-solid fa-ship service-icon"></i>
+                    <h3>Ocean Freight</h3>
+                    <p>Cost-effective solution for large volume and heavy commercial cargo. Sustainable logistics.</p>
+                    <a href="services.html#water">Learn More</a>
+                </div>
+
+                <div class="service-card animate-on-scroll">
+                    <i class="fa-solid fa-truck-fast service-icon"></i>
+                    <h3>Road Freight</h3>
+                    <p>Local and cross-country deliveries. Flexible door-to-door service and reliable scheduling.</p>
+                    <a href="services.html#road">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>SwiftShip</h4>
+                <p>Premium logistics solutions connecting continents via air, water, and road.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="track.html">Track</a></li>
+                    <li><a href="quote.html">Quote</a></li>
+                    <li><a href="login.html">Client Login</a></li>
+                    <li><a href="about.html">about</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: support@swiftship.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 SwiftShip Courier. All Rights Reserved.
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" class="cta-button" style="position: fixed; bottom: 20px; right: 20px; display: none;">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard | SwiftShip</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Swift<span class="heading-orange">Ship</span></a>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="track.html">Track</a></li>
+                    <li><a href="quote.html">Quote</a></li>
+                    <li><a href="#" class="cta-button" onclick="alert('Logged out successfully!'); window.location.href='index.html';">Logout</a></li> 
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="dashboard-content" style="background-color: var(--secondary-white); border-radius: 10px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);">
+            <h1 style="font-size: 2.5rem; border-bottom: 2px solid var(--background-light); padding-bottom: 10px;">Welcome Back, <span class="heading-orange">Client Name</span>!</h1>
+            
+            <div style="display: flex; gap: 40px; margin-top: 30px;">
+                <div style="width: 25%; min-width: 200px; padding-right: 20px; border-right: 1px solid #eee;">
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 15px;"><a href="#shipments" style="text-decoration: none; font-weight: 600; color: var(--primary-orange);"><i class="fa-solid fa-box-open"></i> My Shipments</a></li>
+                        <li style="margin-bottom: 15px;"><a href="#profile" style="text-decoration: none; color: var(--text-dark);"><i class="fa-solid fa-user"></i> Profile Settings</a></li>
+                        <li style="margin-bottom: 15px;"><a href="#quotes" style="text-decoration: none; color: var(--text-dark);"><i class="fa-solid fa-receipt"></i> Saved Quotes</a></li>
+                        <li style="margin-bottom: 15px;"><a href="#" style="text-decoration: none; color: var(--text-dark);"><i class="fa-solid fa-address-book"></i> Address Book</a></li>
+                    </ul>
+                </div>
+
+                <div style="width: 75%;">
+                    <h2 id="shipments" style="margin-bottom: 20px; color: var(--text-dark);"><i class="fa-solid fa-box-open heading-orange"></i> Active Shipments</h2>
+                    
+                    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+                        <thead>
+                            <tr style="background-color: var(--primary-orange); color: var(--secondary-white);">
+                                <th style="padding: 12px; border: 1px solid #ccc;">Tracking ID</th>
+                                <th style="padding: 12px; border: 1px solid #ccc;">Destination</th>
+                                <th style="padding: 12px; border: 1px solid #ccc;">Method</th>
+                                <th style="padding: 12px; border: 1px solid #ccc;">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background-color: #fcfcfc;">
+                                <td style="padding: 12px; border: 1px solid #eee;"><a href="track.html?id=SS12345678" class="heading-orange">SS12345678</a></td>
+                                <td style="padding: 12px; border: 1px solid #eee;">New York, USA</td>
+                                <td style="padding: 12px; border: 1px solid #eee;">Air Freight</td>
+                                <td style="padding: 12px; border: 1px solid #eee;"><span style="color: green; font-weight: 600;">In Transit</span></td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px; border: 1px solid #eee;"><a href="track.html?id=OF98765432" class="heading-orange">OF98765432</a></td>
+                                <td style="padding: 12px; border: 1px solid #eee;">Hamburg, DE</td>
+                                <td style="padding: 12px; border: 1px solid #eee;">Ocean Freight</td>
+                                <td style="padding: 12px; border: 1px solid #eee;"><span style="color: blue; font-weight: 600;">Processing</span></td>
+                            </tr>
+                            <tr style="background-color: #fcfcfc;">
+                                <td style="padding: 12px; border: 1px solid #eee;"><a href="track.html?id=RD11223344" class="heading-orange">RD11223344</a></td>
+                                <td style="padding: 12px; border: 1px solid #eee;">London, UK</td>
+                                <td style="padding: 12px; border: 1px solid #eee;">Road Freight</td>
+                                <td style="padding: 12px; border: 1px solid #eee;"><span style="color: gray; font-weight: 600;">Delivered</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <a href="quote.html" class="cta-button" style="display: inline-block; margin-top: 30px;"><i class="fa-solid fa-plus"></i> Create New Shipment</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>SwiftShip</h4>
+                <p>Premium logistics solutions connecting continents via air, water, and road.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="track.html">Track</a></li>
+                    <li><a href="quote.html">Quote</a></li>
+                    <li><a href="login.html">Client Login</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: support@swiftship.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 SwiftShip Courier. All Rights Reserved.
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" class="cta-button" style="position: fixed; bottom: 20px; right: 20px; display: none;"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>

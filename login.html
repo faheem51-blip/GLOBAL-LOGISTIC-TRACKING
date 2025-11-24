@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Login | SwiftShip</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Swift<span class="heading-orange">Ship</span></a>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="track.html">Track</a></li>
+                    <li><a href="quote.html">Quote</a></li>
+                    <li><a href="login.html" class="cta-button active">Login</a></li> 
+                    <li><a href="about.html">about</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="login-form-section" class="text-center" style="min-height: 70vh; display: flex; flex-direction: column; justify-content: center;">
+            <h1 style="font-size: 2.5rem;">Client <span class="heading-orange">Login</span></h1>
+            <p style="color: var(--text-light); margin-bottom: 20px;">Access your personal dashboard and manage your shipments.</p>
+            
+            <div class="form-container" style="margin: 0 auto;">
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="email"><i class="fa-solid fa-envelope heading-orange"></i> Email Address</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password"><i class="fa-solid fa-lock heading-orange"></i> Password</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <button type="submit" class="cta-button">Sign In</button>
+                    
+                    <p style="margin-top: 20px; font-size: 0.9rem;">
+                        <a href="#" class="heading-orange">Forgot Password?</a>
+                    </p>
+                    <p style="margin-top: 10px; font-size: 0.9rem;">
+                        Don't have an account? <a href="#" class="heading-orange">Register Here</a>
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>SwiftShip</h4>
+                <p>Premium logistics solutions connecting continents via air, water, and road.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="track.html">Track</a></li>
+                    <li><a href="quote.html">Quote</a></li>
+                    <li><a href="login.html">Client Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: support@swiftship.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 SwiftShip Courier. All Rights Reserved.
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" class="cta-button" style="position: fixed; bottom: 20px; right: 20px; display: none;"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
